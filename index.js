@@ -1,4 +1,6 @@
-const url = "https://www.thecolorapi.com/scheme?hex=FF0&mode=monochrome&count=5";
+const color = getRandomHexColor();
+
+const url = `https://www.thecolorapi.com/scheme?hex=${color}&mode=monochrome&count=5`;
 
 const button = document.getElementById('button');
 
@@ -21,6 +23,18 @@ async function fetchData() {
   } catch (error) {
     console.error("Fetch Error:", error);
   }
+}
+
+function getRandomHexColor() {
+  // Generate random values for red, green, and blue channels
+  const red = Math.floor(Math.random() * 256);
+  const green = Math.floor(Math.random() * 256);
+  const blue = Math.floor(Math.random() * 256);
+
+  // Convert the values to hexadecimal format and concatenate
+  const hexColor = `${red.toString(16).padStart(2, '0')}${green.toString(16).padStart(2, '0')}${blue.toString(16).padStart(2, '0')}`;
+
+  return hexColor;
 }
 
 button.addEventListener('click', () => {
