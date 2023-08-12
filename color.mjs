@@ -1,6 +1,6 @@
 // index.js
 
-import fetch from 'node-fetch';
+import { fetch } from 'node-fetch';
 
 const url = "http://colormind.io/api/";
 const data = {
