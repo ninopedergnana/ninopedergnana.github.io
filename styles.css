@@ -14,6 +14,15 @@ section {
     padding: 100px 20vw;
 }
 
+.curve-1 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
 .blue {
     background: #3c31dd;
 }
