@@ -23,6 +23,37 @@ section {
     line-height: 0;
 }
 
+.curve-1 svg {
+    position: relative;
+    display: block;
+    width: calc(104% + 0.8px);
+    height: 134px;
+}
+
+.curve-1 .shape-fill {
+    fill: #FFFFFF;
+}
+
+.curve-2 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+}
+
+.curve-2 svg {
+    position: relative;
+    display: block;
+    width: calc(134% + 1.3px);
+    height: 164px;
+}
+
+.curve-2 .shape-fill {
+    fill: #FFFFFF;
+}
+
 .blue {
     background: #3c31dd;
 }
