@@ -16,19 +16,10 @@ async function fetchData() {
         }
 
         const responseData = await response.json();
-        return convertToHexColorCodes(responseData.result);
+        return responseData.result;
     } catch (error) {
         console.error("Fetch Error:", error);
     }
-}
-
-function rgbToHex(r, g, b) {
-    return `#${r.toString(16).padStart(2, '0')}${g.toString(16).padStart(2, '0')}${b.toString(16).padStart(2, '0')}`;
-}
-
-function convertToHexColorCodes(rgbArray) {
-    const hexColorCodes = rgbArray.map(rgb => rgbToHex(...rgb));
-    return hexColorCodes;
 }
 
 button.addEventListener('click', () => {
