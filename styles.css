@@ -67,7 +67,7 @@ section {
 }
 
 .curve-2 .shape-fill {
-    fill: (var(--first-color));
+    fill: var(--first-color);
 }
 
 /** For mobile devices **/
@@ -85,14 +85,13 @@ section {
     width: 100%;
     overflow: hidden;
     line-height: 0;
-    transform: rotate(180deg);
 }
 
 .curve-3 svg {
     position: relative;
     display: block;
-    width: calc(196% + 1.3px);
-    height: 185px;
+    width: calc(100% + 1.3px);
+    height: 141px;
     transform: rotateY(180deg);
 }
 
@@ -100,11 +99,11 @@ section {
     fill: var(--second-color);
 }
 
-/** For mobile devices **/
-@media (max-width: 767px) {
+/** For tablet devices **/
+@media (min-width: 768px) and (max-width: 1023px) {
     .curve-3 svg {
-        width: calc(300% + 1.3px);
-        height: 110px;
+        width: calc(100% + 1.3px);
+        height: 80px;
     }
 }
 
