@@ -1,18 +1,14 @@
 const url = "https://www.thecolorapi.com/scheme?hex=FF0&mode=monochrome&count=5";
-const data = {
-    model: "default",
-};
 
 const button = document.getElementById('button');
 
 async function fetchData() {
     try {
         const response = await fetch(url, {
-            method: "POST",
+            method: "GET",
             headers: {
                 "Content-Type": "application/json"
             },
-            body: JSON.stringify(data)
         });
 
         if (!response.ok) {
