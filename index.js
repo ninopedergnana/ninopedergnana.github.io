@@ -8,7 +8,7 @@ function handleClick() {
   }
   
   // Bind the function to the button's click event
-  button.addEventListener('click', handleClick);
+  buttonToChangeColors.addEventListener('click', handleClick);
 
 
 function changeColors() {
