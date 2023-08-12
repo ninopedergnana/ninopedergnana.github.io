@@ -1,10 +1,10 @@
-const color = getRandomHexColor();
-
-const url = `https://www.thecolorapi.com/scheme?hex=${color}&mode=monochrome&count=5`;
 
 const button = document.getElementById('button');
 
 async function fetchData() {
+  const color = getRandomHexColor();
+  const url = `https://www.thecolorapi.com/scheme?hex=${color}&mode=monochrome&count=5`;
+
   try {
     const response = await fetch(url, {
       method: "GET",
