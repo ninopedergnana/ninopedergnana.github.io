@@ -37,7 +37,7 @@ section {
 }
 
 .curve-1 .shape-fill {
-    fill: #ffffff;
+    fill: var(--first-color);
 }
 
 /** For mobile devices **/

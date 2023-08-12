@@ -1,4 +1,4 @@
-const url = "http://colormind.io/api/";
+const url = "https://www.thecolorapi.com/scheme?hex=FF0&mode=monochrome&count=5";
 const data = {
     model: "default",
 };
@@ -38,7 +38,7 @@ function convertToHexColorCodes(rgbArray) {
 button.addEventListener('click', () => {
     fetchData().then(colors => {
         console.log('Colors fetched:', colors);
-        if (colors) {
+        if (false) {
             document.body.style.setProperty('--first-color', colors[0]);
             document.body.style.setProperty('--second-color', colors[1]);
             document.body.style.setProperty('--third-color', colors[2]);
