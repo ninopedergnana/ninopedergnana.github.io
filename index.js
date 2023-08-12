@@ -24,7 +24,11 @@ async function fetchData() {
 }
 
 button.addEventListener('click', () => {
-  const colors = fetchData();
+  //const colors = fetchData();
+  fetchData().then(colors => {
+    console.log(colors)
+    console.log(colors.responseData)
+  })
   console.log('Colors fetched:', colors);
   if (colors) {
     document.body.style.setProperty('--first-color', colors.colors[0].hex.value);
