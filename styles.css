@@ -26,12 +26,12 @@ section {
 .curve-1 svg {
     position: relative;
     display: block;
-    width: calc(104% + 0.8px);
+    width: calc(134% + 0.8px);
     height: 134px;
 }
 
 .curve-1 .shape-fill {
-    fill: #FFFFFF;
+    fill: #ffffff;
 }
 
 .curve-2 {
@@ -46,12 +46,21 @@ section {
 .curve-2 svg {
     position: relative;
     display: block;
-    width: calc(134% + 1.3px);
+    width: calc(94% + 1.3px);
     height: 164px;
 }
 
 .curve-2 .shape-fill {
-    fill: #FFFFFF;
+    fill: #3c31dd;
+}
+
+.footer {
+    aspect-ratio: 960/300;
+    width: 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-image: url('svg/layered-waves-haikei.svg');
 }
 
 .blue {
