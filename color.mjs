@@ -36,5 +36,4 @@ function convertToHexColorCodes(rgbArray) {
     return hexColorCodes;
 }
 
-// Export the 'output' variable
 export { fetchData };

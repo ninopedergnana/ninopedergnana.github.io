@@ -1,17 +1,13 @@
 import { fetchData } from "./color.mjs";
 
 const buttonToChangeColors = document.getElementById('buttonToChangeColors');
-
-// Define the function you want to bind
-function handleClick() {
-    changeColors();
-  }
   
   // Bind the function to the button's click event
-  buttonToChangeColors.addEventListener('click', handleClick);
+  buttonToChangeColors.addEventListener('click', changeColors);
 
 
 function changeColors() {
+    console.log('Started fetching colors')
     const colors = fetchData();
     console.log('Colors fetched: ', colors);
     document.body.style.setProperty('--first-color', colors[0]);
