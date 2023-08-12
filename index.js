@@ -24,17 +24,13 @@ async function fetchData() {
 }
 
 button.addEventListener('click', () => {
-  //const colors = fetchData();
   fetchData().then(colors => {
-    console.log(colors)
-    console.log(colors.responseData)
+    if (colors) {
+      document.body.style.setProperty('--first-color', colors.colors[0].hex.value);
+      document.body.style.setProperty('--second-color', colors.colors[1].hex.value);
+      document.body.style.setProperty('--third-color', colors.colors[2].hex.value);
+      document.body.style.setProperty('--fourth-color', colors.colors[3].hex.value);
+      document.body.style.setProperty('--fifth-color', colors.colors[4].hex.value);
+    }
   })
-  console.log('Colors fetched:', colors);
-  if (colors) {
-    document.body.style.setProperty('--first-color', colors.colors[0].hex.value);
-    document.body.style.setProperty('--second-color', colors.colors[1].hex.value);
-    document.body.style.setProperty('--third-color', colors.colors[2].hex.value);
-    document.body.style.setProperty('--fourth-color', colors.colors[3].hex.value);
-    document.body.style.setProperty('--fifth-color', colors.colors[4].hex.value);
-  }
 });
