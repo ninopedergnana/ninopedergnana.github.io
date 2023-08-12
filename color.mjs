@@ -1,7 +1,3 @@
-// index.js
-
-import { fetch } from 'node-fetch';
-
 const url = "http://colormind.io/api/";
 const data = {
     model: "default",
@@ -42,6 +38,3 @@ function convertToHexColorCodes(rgbArray) {
 
 // Export the 'output' variable
 export { fetchData };
-
-// Call the fetchData function when the module is imported
-fetchData();
