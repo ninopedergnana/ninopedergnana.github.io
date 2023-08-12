@@ -5,8 +5,8 @@ body {
     background: #202731;
     --first-color: #3c31dd;
     --second-color: #dd3f31;
-    --third-color: #ff0066;
-    --fourth-color: #0f0f10;
+    --third-color: #0f0f10;
+    --fourth-color: #ff0066;
     --fifth-color: #44a445;
 
 }
@@ -37,7 +37,7 @@ section {
 }
 
 .curve-1 .shape-fill {
-    fill: var(--fifth-color);
+    fill: #ffffff;
 }
 
 /** For mobile devices **/
@@ -78,6 +78,36 @@ section {
     }
 }
 
+.curve-3 {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg);
+}
+
+.curve-3 svg {
+    position: relative;
+    display: block;
+    width: calc(196% + 1.3px);
+    height: 185px;
+    transform: rotateY(180deg);
+}
+
+.curve-3 .shape-fill {
+    fill: var(--second-color);
+}
+
+/** For mobile devices **/
+@media (max-width: 767px) {
+    .curve-3 svg {
+        width: calc(300% + 1.3px);
+        height: 110px;
+    }
+}
+
 .footer {
     aspect-ratio: 960/300;
     width: 100%;
@@ -88,15 +118,15 @@ section {
 }
 
 .first {
-    background: var(--third-color);
+    background: var(--first-color);
 }
 
 .second {
-    background: var(--fourth-color);
+    background: var(--second-color);
 }
 
 .third {
-    background: var(--fifth-color);
+    background: var(--third-color);
 }
 
 .forth {
