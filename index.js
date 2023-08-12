@@ -20,3 +20,5 @@ function changeColors() {
     document.body.style.setProperty('--fourth-color', colors[3]);
     document.body.style.setProperty('--fifth-color', colors[4]);
 };
+
+export { changeColors };
